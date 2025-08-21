@@ -20,8 +20,11 @@
 		],
 		"client": [
 			"org.bgcnlt.UraniumModClient"
-		]
-	},
+		],
+        "fabric-datagen": [
+          "org.bgcnlt.docs.datagen.UraniumModDataGenerator"
+        ]
+    },
 	"mixins": [
 		"uranium-mod.mixins.json",
 		{
