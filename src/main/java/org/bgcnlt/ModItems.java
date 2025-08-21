@@ -11,8 +11,6 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
-import static net.minecraft.item.Items.register;
-
 public class ModItems {
     public static final Item RAW_URANIUM = register("raw_uranium", Item::new, new Item.Settings());
 
