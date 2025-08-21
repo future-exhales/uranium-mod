@@ -14,7 +14,7 @@ import java.util.function.Function;
 import static net.minecraft.item.Items.register;
 
 public class ModItems {
-    public static final Item SUSPICIOUS_SUBSTANCE = register("suspicious_substance", Item::new, new Item.Settings());
+    public static final Item RAW_URANIUM = register("raw_uranium", Item::new, new Item.Settings());
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
         RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UraniumMod.MOD_ID, name));
@@ -28,6 +28,6 @@ public class ModItems {
 
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS)
-                .register((itemGroup) -> itemGroup.add(ModItems.SUSPICIOUS_SUBSTANCE));
+                .register((itemGroup) -> itemGroup.add(ModItems.RAW_URANIUM));
     }
 }
