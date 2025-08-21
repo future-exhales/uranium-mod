@@ -1,4 +1,4 @@
-package org.bgcnlt.mixin;
+package org.bgcnlt;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -17,7 +17,7 @@ public class ModItems {
     public static final Item SUSPICIOUS_SUBSTANCE = register("suspicious_substance", Item::new, new Item.Settings());
 
     public static Item register(String name, Function<Item.Settings, Item> itemFactory, Item.Settings settings) {
-        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(FabricDocsReference.MOD_ID, name));
+        RegistryKey<Item> itemKey = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(UraniumMod.MOD_ID, name));
 
         Item item = itemFactory.apply(settings.registryKey(itemKey));
 
