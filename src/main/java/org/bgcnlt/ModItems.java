@@ -10,10 +10,13 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.registry.tag.TagKey;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
+
+import static org.bgcnlt.ModBlocks.URANIUM_ORE;
 
 public class ModItems {
     public static final Item RAW_URANIUM = register("raw_uranium", Item::new, new Item.Settings());
@@ -40,5 +43,7 @@ public class ModItems {
             itemGroup.add(ModItems.RAW_URANIUM);
             //itemGroup.add(ModItems.POISONOUS_APPLE);
         });
+
+
     }
 }
