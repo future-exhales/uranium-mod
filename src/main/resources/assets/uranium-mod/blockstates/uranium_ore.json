@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "uranium-mod:block/uranium_ore"
+    }
+  }
+}

@@ -1,5 +1,6 @@
 {
   "item.uranium-mod.raw_uranium" : "Raw Uranium",
   "block.uranium-mod.uranium_ore": "Uranium Ore",
+  "item.uranium-mod.uranium_ore": "Uranium Ore",
   "itemGroup.uranium-mod": "Uranium"
 }

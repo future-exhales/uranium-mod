@@ -19,8 +19,8 @@ public class UraniumMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-        ModItems.initialize();
-        ModBlocks.initialize();
+        UraniumModItems.initialize();
+        UraniumModBlocks.initialize();
 
 		LOGGER.info("Hello Fabric world!");
 	}

@@ -22,7 +22,7 @@
 			"org.bgcnlt.UraniumModClient"
 		],
         "fabric-datagen": [
-          "org.bgcnlt.docs.datagen.UraniumModDataGenerator"
+		  "org.bgcnlt.datagen.UraniumModDataGenerator"
         ]
     },
 	"mixins": [

@@ -14,7 +14,7 @@ import net.minecraft.util.Identifier;
 
 import java.util.function.Function;
 
-public class ModBlocks {
+public class UraniumModBlocks {
     private static Block register(String name, Function<AbstractBlock.Settings, Block> blockFactory, AbstractBlock.Settings settings, boolean shouldRegisterItem) {
         // Create a registry key for the block
         RegistryKey<Block> blockKey = keyOfBlock(name);
@@ -51,8 +51,8 @@ public class ModBlocks {
     );
 
     public static void initialize() {
-        ItemGroupEvents.modifyEntriesEvent(ModItems.URANIUM_MOD_ITEM_GROUP_KEY).register((itemGroup) -> {
-            itemGroup.add(ModBlocks.URANIUM_ORE.asItem());
+        ItemGroupEvents.modifyEntriesEvent(UraniumModItems.URANIUM_MOD_ITEM_GROUP_KEY).register((itemGroup) -> {
+            itemGroup.add(UraniumModBlocks.URANIUM_ORE.asItem());
         });
     }
 
